@@ -1,0 +1,6 @@
+C:\Users\erich\code\2016-dot-net-week-4\Poker\Poker\bin\Debug\Poker.exe.config
+C:\Users\erich\code\2016-dot-net-week-4\Poker\Poker\bin\Debug\Poker.exe
+C:\Users\erich\code\2016-dot-net-week-4\Poker\Poker\bin\Debug\Poker.pdb
+C:\Users\erich\code\2016-dot-net-week-4\Poker\Poker\obj\Debug\Poker.csprojResolveAssemblyReference.cache
+C:\Users\erich\code\2016-dot-net-week-4\Poker\Poker\obj\Debug\Poker.exe
+C:\Users\erich\code\2016-dot-net-week-4\Poker\Poker\obj\Debug\Poker.pdb

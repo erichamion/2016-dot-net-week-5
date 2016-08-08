@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="PokerUWP.GamePlayPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PokerUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" MinHeight="{Binding MinHeight, ElementName=mainGrid}" MinWidth="{Binding MinWidth, ElementName=mainGrid}">
+
+    <Grid x:Name="mainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" MinHeight="630" MinWidth="225">
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="{Binding MinHeight, ElementName=playerPanel3}"/>
+            <RowDefinition MinHeight="{Binding MinHeight, ElementName=playerPanel2}"/>
+            <RowDefinition MinHeight="{Binding MinHeight, ElementName=playerPanel1}"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <RelativePanel x:Name="controlPanel" Grid.Column="1" Grid.Row="1" BorderBrush="{ThemeResource CheckBoxBorderThemeBrush}" BorderThickness="1,1,1,1">
+            <TextBlock x:Name="lastActionText" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True"/>
+            <Button x:Name="actionButton" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,30" Click="actionButton_Click" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+        </RelativePanel>
+        <RelativePanel x:Name="playerPanel1" Grid.Column="1" Grid.Row="2" MinHeight="210" BorderBrush="{ThemeResource CheckBoxBorderThemeBrush}" BorderThickness="1,1,1,1">
+            <TextBlock x:Name="dealerText1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True"/>
+            <TextBlock x:Name="playerNameText1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,10,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="dealerText1"/>
+            <TextBlock x:Name="playerBalanceText1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="playerNameText1"/>
+            <TextBlock x:Name="playerHandText1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="playerBalanceText1"/>
+        </RelativePanel>
+        <RelativePanel x:Name="playerPanel2" Grid.Column="0" Grid.Row="1" MinHeight="{Binding MinHeight, ElementName=playerPanel1}" BorderBrush="{ThemeResource CheckBoxBorderThemeBrush}" BorderThickness="1,1,1,1">
+            <TextBlock x:Name="dealerText2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True"/>
+            <TextBlock x:Name="playerNameText2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,10,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="dealerText2"/>
+            <TextBlock x:Name="playerBalanceText2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="playerNameText2"/>
+            <TextBlock x:Name="playerHandText2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="playerBalanceText2"/>
+        </RelativePanel>
+        <RelativePanel x:Name="playerPanel3" Grid.Column="1" Grid.Row="0" MinHeight="{Binding MinHeight, ElementName=playerPanel1}" BorderBrush="{ThemeResource CheckBoxBorderThemeBrush}" BorderThickness="1,1,1,1">
+            <TextBlock x:Name="dealerText3" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True"/>
+            <TextBlock x:Name="playerNameText3" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,10,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="dealerText3"/>
+            <TextBlock x:Name="playerBalanceText3" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="playerNameText3"/>
+            <TextBlock x:Name="playerHandText3" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="playerBalanceText3"/>
+        </RelativePanel>
+        <RelativePanel x:Name="playerPanel4" Grid.Column="2" Grid.Row="1" MinHeight="{Binding MinHeight, ElementName=playerPanel1}" BorderBrush="{ThemeResource CheckBoxBorderThemeBrush}" BorderThickness="1,1,1,1">
+            <TextBlock x:Name="dealerText4" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True"/>
+            <TextBlock x:Name="playerNameText4" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,10,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="dealerText4"/>
+            <TextBlock x:Name="playerBalanceText4" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="playerNameText4"/>
+            <TextBlock x:Name="playerHandText4" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,30" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="playerBalanceText4"/>
+        </RelativePanel>
+    </Grid>
+</Page>

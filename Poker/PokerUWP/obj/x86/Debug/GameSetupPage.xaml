@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="PokerUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PokerUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" NavigationCacheMode="Required">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="5"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition MinWidth="5"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:ConnectionId='1' x:Name="titleLabel" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="1" TextWrapping="Wrap" Text="Game Setup" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,10" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='2' x:Name="nameLabel" HorizontalAlignment="Right" Text="Name:" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="5,10" TextWrapping="Wrap" TextAlignment="Right"/>
+        <TextBox x:ConnectionId='3' x:Name="nameTextBox" Text="" VerticalAlignment="Center" Grid.Column="2" Grid.Row="2" Margin="5,10" HorizontalAlignment="Left" Width="{Binding ActualWidth, ElementName=walletLabel, Mode=OneWay}"/>
+        <TextBlock x:ConnectionId='4' x:Name="playerCountLabel" HorizontalAlignment="Right" Text="Number of Players:" VerticalAlignment="Center" Grid.Column="1" Grid.Row="3" Margin="5,10" TextWrapping="Wrap" TextAlignment="Right"/>
+        <TextBox x:ConnectionId='5' x:Name="playerCountTextBox" Text="" VerticalAlignment="Center" Grid.Column="2" Grid.Row="3" Margin="5,10" HorizontalAlignment="Left" Width="{Binding ActualWidth, ElementName=walletLabel, Mode=OneWay}"/>
+        <TextBlock x:ConnectionId='6' x:Name="anteLabel" HorizontalAlignment="Right" Text="Ante size (whole dollars):" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" Margin="5,10" TextWrapping="Wrap" TextAlignment="Right"/>
+        <TextBox x:ConnectionId='7' x:Name="anteTextBox" Text="" VerticalAlignment="Center" Grid.Row="4" Grid.Column="2" Margin="5,10" HorizontalAlignment="Left" Width="{Binding ActualWidth, ElementName=walletLabel, Mode=OneWay}"/>
+        <TextBlock x:ConnectionId='8' x:Name="walletLabel" HorizontalAlignment="Right" Text="Initial wallet size (whole dollars):" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Margin="5,10" TextWrapping="WrapWholeWords" TextAlignment="Right"/>
+        <TextBox x:ConnectionId='9' x:Name="walletTextBox" Text="" VerticalAlignment="Center" Grid.Row="5" Grid.Column="2" Margin="5,10" HorizontalAlignment="Left" Width="{Binding ActualWidth, ElementName=walletLabel, Mode=OneWay}"/>
+        <Button x:ConnectionId='10' x:Name="startButton" Content="Start Game" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,10"                          />
+
+    </Grid>
+</Page>
+

@@ -1,0 +1,8 @@
+C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerTests\obj\Debug\PokerTests.csprojResolveAssemblyReference.cache
+C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerTests\bin\Debug\PokerTests.dll
+C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerTests\bin\Debug\PokerTests.pdb
+C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerTests\obj\Debug\PokerTests.dll
+C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerTests\obj\Debug\PokerTests.pdb
+C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerTests\bin\Debug\PokerLib_Portable.dll
+C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerTests\bin\Debug\PokerLib_Portable.pdb
