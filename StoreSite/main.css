@@ -153,7 +153,7 @@ section {
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.5em;
-    padding-bottom: 0.25em;
+    padding-bottom: 0.5em;
     background-color: #E0F7FA;
 }
 
@@ -238,6 +238,67 @@ blockquote cite:before {
 .inventory h1:before {
     background-position: left 50% top -350px;
     background-image: url(Self-sealing_stem_bolt_1.jpg)
+}
+
+.inventory .productLabel {
+    display: table-cell;
+    font-weight: bolder;
+    color: black;
+    text-shadow: 1px 1px 0 white, 0 0 0.4em white;
+    width: 5em;
+}
+
+.inventory .productLabel:after {
+    content: ":";
+}
+
+.inventory .productValue {
+    display: table-cell;
+    color: black;
+    font-weight: normal;
+    height: 2.75em;
+    }
+
+.inventory .productId {
+    visibility: collapse;
+    font-size: 0;
+}
+
+.inventory .oos h3, 
+.inventory .oos .productLabel,
+.inventory .oos .productValue{
+    color: lightgray;
+}
+
+.inventory .oos {
+    background-color: whitesmoke;
+}
+
+.inventory .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.inventory section {
+    width: 10em;
+    margin: 2%;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.inventory section:hover {
+    border-color: #D50000;
+}
+
+.inventory section.oos:hover {
+    border-color: lightgray;
+}
+
+.inventory section h3 {
+    text-align: center;
+    height: 2.5em;
 }
 
 .about h1:before {

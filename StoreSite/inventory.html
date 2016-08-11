@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="main.css">
         <title>Survival Store - Inventory</title>
     </head>
-    <body class="inventory">
+    <body class="inventory" onload="completeLinks()">
         <div class="outer">
             <header>
                 <h1>The Survival Store</h1>
@@ -18,110 +18,136 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-            <div>
+            <div class="main">
                 <h2>Inventory</h2>
-                <div class="products">
+                <div id="products" class="content">
                     <section class="productDesc">
-                        <h3 class="productName">Self-Sealing Stem Bolt (144 pack)</h3>
-                        <div class="productCategory">
-                            <span class="productLabel">Category</span>
-                            <span class="productValue">Unknown</span>
-                        </div>
-                        <div class="productPrice">
-                            <span class="productLabel">Price</span>
-                            <span class="productValue">$35.99</span>
-                        </div>
+                        <a>
+                            <h3 class="productName">Self-Sealing Stem Bolt (144 pack)</h3>
+                            <div class="productCategory">
+                                <span class="productLabel">Category</span>
+                                <span class="productValue">Unknown</span>
+                            </div>
+                            <div class="productPrice">
+                                <span class="productLabel">Price</span>
+                                <span class="productValue">$35.99</span>
+                            </div>
+                            <div class="productId">42272742</div>
+                        </a>
                     </section>
                     <section class="productDesc">
-                        <h3 class="productName">Reverse-Ratcheting Routing Planer</h3>
-                        <div class="productCategory">
-                            <span class="productLabel">Category</span>
-                            <span class="productValue">Unknown</span>
-                        </div>
-                        <div class="productPrice">
-                            <span class="productLabel">Price</span>
-                            <span class="productValue">$12.97</span>
-                        </div>
+                        <a>
+                            <h3 class="productName">Reverse-Ratcheting Routing Planer</h3>
+                            <div class="productCategory">
+                                <span class="productLabel">Category</span>
+                                <span class="productValue">Unknown</span>
+                            </div>
+                            <div class="productPrice">
+                                <span class="productLabel">Price</span>
+                                <span class="productValue">$12.97</span>
+                            </div>
+                            <div class="productId">42272743</div>
+                        </a>
                     </section>
                     <section class="productDesc">
-                        <h3 class="productName">Yamok Sauce (10 wrappages)</h3>
-                        <div class="productCategory">
-                            <span class="productLabel">Category</span>
-                            <span class="productValue">Food</span>
-                        </div>
-                        <div class="productPrice">
-                            <span class="productLabel">Price</span>
-                            <span class="productValue">$6.99</span>
-                        </div>
+                        <a>
+                            <h3 class="productName">Yamok Sauce (10 wrappages)</h3>
+                            <div class="productCategory">
+                                <span class="productLabel">Category</span>
+                                <span class="productValue">Food</span>
+                            </div>
+                            <div class="productPrice">
+                                <span class="productLabel">Price</span>
+                                <span class="productValue">$6.99</span>
+                            </div>
+                            <div class="productId">42272744</div>
+                        </a>                     
                     </section>
                     <section class="productDesc">
-                        <h3 class="productName">Gagh</h3>
-                        <div class="productCategory">
-                            <span class="productLabel">Category</span>
-                            <span class="productValue">Food</span>
-                        </div>
-                        <div class="productPrice">
-                            <span class="productLabel">Price</span>
-                            <span class="productValue">$0.03</span>
-                        </div>
+                        <a>
+                            <h3 class="productName">Gagh</h3>
+                            <div class="productCategory">
+                                <span class="productLabel">Category</span>
+                                <span class="productValue">Food</span>
+                            </div>
+                            <div class="productPrice">
+                                <span class="productLabel">Price</span>
+                                <span class="productValue">$0.03</span>
+                            </div>
+                            <div class="productId">42272745</div>
+                        </a>                     
                     </section>
                     <section class="productDesc">
-                        <h3 class="productName">Klingon Bloodwine</h3>
-                        <div class="productCategory">
-                            <span class="productLabel">Category</span>
-                            <span class="productValue">Food</span>
-                        </div>
-                        <div class="productPrice">
-                            <span class="productLabel">Price</span>
-                            <span class="productValue">$10.00</span>
-                        </div>
+                        <a>
+                            <h3 class="productName">Klingon Bloodwine</h3>
+                            <div class="productCategory">
+                                <span class="productLabel">Category</span>
+                                <span class="productValue">Food</span>
+                            </div>
+                            <div class="productPrice">
+                                <span class="productLabel">Price</span>
+                                <span class="productValue">$10.00</span>
+                            </div>
+                            <div class="productId">42272746</div>
+                        </a>                     
                     </section>
                     <section class="productDesc oos">
-                        <h3 class="productName">Romulan Ale</h3>
-                        <div class="productCategory">
-                            <span class="productLabel">Category</span>
-                            <span class="productValue">Food</span>
-                        </div>
-                        <div class="productPrice">
-                            <span class="productLabel">Price</span>
-                            <span class="productValue">$3599.00</span>
-                        </div>
+                        <a>
+                            <h3 class="productName">Romulan Ale</h3>
+                            <div class="productCategory">
+                                <span class="productLabel">Category</span>
+                                <span class="productValue">Food</span>
+                            </div>
+                            <div class="productPrice">
+                                <span class="productLabel">Price</span>
+                                <span class="productValue">$3599.00</span>
+                            </div>
+                            <div class="productId">42272747</div>
+                        </a>                     
                     </section>
                     <section class="productDesc">
-                        <h3 class="productName">Alphanumeric Sequencer</h3>
-                        <div class="productCategory">
-                            <span class="productLabel">Category</span>
-                            <span class="productValue">Engineering Tools</span>
-                        </div>
-                        <div class="productPrice">
-                            <span class="productLabel">Price</span>
-                            <span class="productValue">$531.75</span>
-                        </div>
+                        <a>
+                            <h3 class="productName">Alphanumeric Sequencer</h3>
+                            <div class="productCategory">
+                                <span class="productLabel">Category</span>
+                                <span class="productValue">Engineering Tools</span>
+                            </div>
+                            <div class="productPrice">
+                                <span class="productLabel">Price</span>
+                                <span class="productValue">$531.75</span>
+                            </div>
+                            <div class="productId">42272748</div>
+                        </a>                     
                     </section>
                     <section class="productDesc">
-                        <h3 class="productName">Quantum Flux Regulator</h3>
-                        <div class="productCategory">
-                            <span class="productLabel">Category</span>
-                            <span class="productValue">Engineering Tools</span>
-                        </div>
-                        <div class="productPrice">
-                            <span class="productLabel">Price</span>
-                            <span class="productValue">$997.97</span>
-                        </div>
+                        <a>
+                            <h3 class="productName">Quantum Flux Regulator</h3>
+                            <div class="productCategory">
+                                <span class="productLabel">Category</span>
+                                <span class="productValue">Engineering Tools</span>
+                            </div>
+                            <div class="productPrice">
+                                <span class="productLabel">Price</span>
+                                <span class="productValue">$997.97</span>
+                            </div>
+                            <div class="productId">42272749</div>
+                        </a>
                     </section>
                     <section class="productDesc">
-                        <h3 class="productName">Thermal Regulator</h3>
-                        <div class="productCategory">
-                            <span class="productLabel">Category</span>
-                            <span class="productValue">Engineering Tools</span>
-                        </div>
-                        <div class="productPrice">
-                            <span class="productLabel">Price</span>
-                            <span class="productValue">$222.22</span>
-                        </div>
+                        <a>
+                            <h3 class="productName">Thermal Regulator</h3>
+                            <div class="productCategory">
+                                <span class="productLabel">Category</span>
+                                <span class="productValue">Engineering Tools</span>
+                            </div>
+                            <div class="productPrice">
+                                <span class="productLabel">Price</span>
+                                <span class="productValue">$222.22</span>
+                            </div>
+                            <div class="productId">42272750</div>
+                        </a>
                     </section>
                 </div>
-
             </div>
 
             <footer>
@@ -131,5 +157,48 @@
                 <p>&copy;2371 <a href="contact.html">The Noh-Jay Consortium</a></p>
             </footer>
         </div>
+        
+        
+        <script>
+            function completeLinks() {
+                var productHolder = document.getElementById("products");
+                var children = productHolder.children;
+                for (var i = 0; i < children.length; i++) {
+                    child = children[i];
+                    classList = child.classList;
+                    if (classList.contains("productDesc")) {
+                        var name = getProductName(child);
+                        var id = getProductId(child);
+                        var anchor = child.children[0];
+                        anchor.setAttribute("href", getProductHref(name, id, child.classList.contains("oos")));
+                    }
+                }
+            }
+            
+            function getProductHref(name, id, isOos) { 
+                var descriptor = name + " (ID: " + id + ")";
+                var subject;
+                var body;
+                if (isOos) {
+                    subject = "Item Out of Stock Inquiry";
+                    subject = "Hello, I'm interest in " + descriptor + ", which is currently out of stock. Please alert me when it becomes available.";
+                }
+                else {
+                    subject = "Direct Purchase";
+                    body = "Hello, I'd like to purchase " + descriptor + " from the survival store inventory.";
+                }
+                 var result = "mailto:the-noh-jay-consortium%40abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijk.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+                return result;
+            }
+            
+            function getProductName(sectionNode) { 
+                return sectionNode.children[0].getElementsByClassName("productName")[0].innerHTML;    
+            }
+            
+            function getProductId(sectionNode) {
+                return sectionNode.children[0].getElementsByClassName("productId")[0].innerHTML;
+            }
+        
+        </script>
     </body>
 </html>
