@@ -1,2 +1,2 @@
-C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerLib_Portable\PokerLib.csproj;neutral
-C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\PokerUWP.csproj;x86
+C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerLib_Portable\PokerLib.csproj;neutral
+C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\PokerUWP.csproj;x86

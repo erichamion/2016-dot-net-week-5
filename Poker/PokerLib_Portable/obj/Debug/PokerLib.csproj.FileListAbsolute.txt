@@ -3,3 +3,8 @@ C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerLib_Portable\bin\Debug\PokerL
 C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerLib_Portable\obj\Debug\PokerLib.csprojResolveAssemblyReference.cache
 C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerLib_Portable\obj\Debug\PokerLib_Portable.dll
 C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerLib_Portable\obj\Debug\PokerLib_Portable.pdb
+C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerLib_Portable\bin\Debug\PokerLib_Portable.dll
+C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerLib_Portable\bin\Debug\PokerLib_Portable.pdb
+C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerLib_Portable\obj\Debug\PokerLib.csprojResolveAssemblyReference.cache
+C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerLib_Portable\obj\Debug\PokerLib_Portable.dll
+C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerLib_Portable\obj\Debug\PokerLib_Portable.pdb

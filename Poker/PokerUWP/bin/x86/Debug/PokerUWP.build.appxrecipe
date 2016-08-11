@@ -10,19 +10,19 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>83d34ff2-0180-4432-a81b-80e01b2be6a9</PackageIdentityName>
     <PackageIdentityPublisher>CN=erich</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\bin\x86\Debug\PokerUWP.exe">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\bin\x86\Debug\PokerUWP.exe">
       <PackagePath>entrypoint\PokerUWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\erich\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -334,49 +334,49 @@
     <AppxPackagedFile Include="C:\Users\erich\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerLib_Portable\bin\Debug\PokerLib_Portable.dll">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerLib_Portable\bin\Debug\PokerLib_Portable.dll">
       <PackagePath>PokerLib_Portable.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\bin\x86\Debug\PokerUWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\bin\x86\Debug\PokerUWP.xr.xml">
       <PackagePath>PokerUWP.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-4\Poker\PokerUWP\bin\x86\Debug\Core\PokerUWP.exe">
+    <AppxPackagedFile Include="C:\Users\erich\code\2016-dot-net-week-5\Poker\PokerUWP\bin\x86\Debug\Core\PokerUWP.exe">
       <PackagePath>PokerUWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
