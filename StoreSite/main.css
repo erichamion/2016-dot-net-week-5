@@ -1,10 +1,11 @@
 body {
     background-color: #006064;
+    margin: 0;
 }
 
 .outer {
     background-color: white;
-    max-width: 1024px;
+    max-width: 64rem;
     align-self: center;
     margin-left: auto;
     margin-right: auto;
@@ -36,11 +37,11 @@ h1:before {
     opacity: 0.6;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    -ms-background-size: 1024px;
-    -o-background-size: 1024px;
-    -moz-background-size: 1024px;
-    -webkit-background-size: 1024px;
-    background-size: 1024px;
+    -ms-background-size: 64rem;
+    -o-background-size: 64rem;
+    -moz-background-size: 64rem;
+    -webkit-background-size: 64rem;
+    background-size: 64rem;
 }
 
 h1 {
@@ -49,10 +50,10 @@ h1 {
     padding-bottom: 1.5em;
     padding-top: 3em;
     background-repeat: no-repeat;
-    background-size: 1024px;
+    background-size: 64rem;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 300%;
+    font-size: 3rem;
     font-weight: bolder;
     color: #D50000;
     /* Fake text outline based on https://www.html5andbeyond.com/css-text-stroke-effect-tutorial-workaround/ */
@@ -78,7 +79,7 @@ nav li {
     border-right: 1px solid #D50000;
     margin: 0;
     padding: 0;
-    font-size: initial;
+    font-size: 1.1rem;
 }
 
 nav li a {
@@ -111,19 +112,20 @@ nav li:hover {
 
 nav li.active:hover {
     color: white;
-    background-color: inherit !important;
+    background-color: inherit;
 }
 
 
 footer {
     background-color: #00BCD4;
     color: white;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    margin-top: 1.5em;
-    text-shadow: 1px 1px 0 black, 0 0 0.4em black
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    text-shadow: 1px 1px 0 black, 0 0 0.4em black;
+    font-size: 0.8rem;
 }
 
 footer p {
@@ -141,19 +143,19 @@ h2 {
 }
 
 h3, h4, h5, h6 {
-    margin-top: 0.25em;
+    margin-top: 0.25rem;
 }
 
 
 section {
     margin-left: 4%;
     width: 62%;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: #E0F7FA;
 }
 
@@ -170,7 +172,7 @@ aside {
     display: inline;
     padding: 0;
     right: 4%;
-    top:3em;
+    top:3rem;
     width: 36%;
     min-width: 15em;
     background-color: #D50000;
@@ -181,6 +183,7 @@ aside {
 blockquote {
     margin: 0;
     padding: 0.5em;
+
 }
 
 blockquote p:before {
@@ -188,20 +191,22 @@ blockquote p:before {
     display: block;
     margin-left: -0.55em;
     margin-top: 0.5em;
-    font-size: 300%;
+    font-size: 3rem;
     line-height: 0;
     vertical-align: -0.7em;
 }
 
 blockquote p {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-shadow: 1px 1px 0 black, 0 0 0.4em black;
+
 }
 
 blockquote p:after {
     content: close-quote;
     display: block;
-    font-size: 300%;
+    font-size: 3rem;
     line-height: 0;
     text-align: right;
     margin-right: -0.55em;
@@ -209,6 +214,8 @@ blockquote p:after {
 
 blockquote cite {
     margin-left: 3em;
+    font-weight: bolder;
+    font-size: 1.1rem;
 }
 
 blockquote cite:before {
@@ -221,7 +228,7 @@ blockquote cite:before {
 
 
 .home h1:before {
-    background-position: left 50% top -200px;
+    background-position: left 50% top -13rem;
     background-image: url(Deep_Space_9_promenade_The_Fallen.jpg);
 }
 
@@ -236,8 +243,12 @@ blockquote cite:before {
 }
 
 .inventory h1:before {
-    background-position: left 50% top -350px;
+    background-position: left 50% top -22rem;
     background-image: url(Self-sealing_stem_bolt_1.jpg)
+}
+
+.inventory h2 {
+    width: initial;
 }
 
 .inventory .productLabel {
@@ -245,7 +256,7 @@ blockquote cite:before {
     font-weight: bolder;
     color: black;
     text-shadow: 1px 1px 0 white, 0 0 0.4em white;
-    width: 5em;
+    width: 5rem;
 }
 
 .inventory .productLabel:after {
@@ -283,9 +294,9 @@ blockquote cite:before {
 }
 
 .inventory section {
-    width: 10em;
-    margin: 2%;
-    border: 3px solid rgba(0, 0, 0, 0);
+    width: 10rem;
+    margin: 1rem;
+    border: 0.2rem solid rgba(0, 0, 0, 0);
 }
 
 .inventory section:hover {
@@ -302,7 +313,7 @@ blockquote cite:before {
 }
 
 .about h1:before {
-    background-position: left 50% top -150px;
+    background-position: left 50% top -9.4rem;
     background-image: url(selfsealing-stembolts.jpg);
 }
 
@@ -312,6 +323,6 @@ blockquote cite:before {
 }
 
 .contact h1:before {
-    background-position: left 50% top -30px;
+    background-position: left 50% top -1.9rem;
     background-image: url(SubspaceRelayStation06.jpg)
 }
