@@ -10,7 +10,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    opacity: 0.9999999;
+    
+    
+/*    opacity: 0.9999999;*/
 }
 
 a {
@@ -22,7 +24,7 @@ a {
 
 
 
-h1:before {
+h1:after {
     /* Transparent background image in CSS technique from
      * https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity
      */
@@ -34,7 +36,7 @@ h1:before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0.4;
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: 64rem;
@@ -45,10 +47,10 @@ h1:before {
 }
 
 h1 {
+    height: 13rem;
     align-self: center;
     text-align: center;
-    padding-bottom: 1.5em;
-    padding-top: 3em;
+    padding-top: 4rem;
     background-repeat: no-repeat;
     background-size: 64rem;
     margin-top: 0;
@@ -60,7 +62,13 @@ h1 {
     text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 0 0 0.7em black, 0 0 0.15em black;
     position: relative;
     overflow: hidden;
-    white-space: nowrap;
+    background-color: #E0F7FA;
+    
+    /* Need to set some transparency, or else changing background-color here
+     * breaks the transparent background images on h1 elements because of 
+     * wonky z-order behavior.
+     */
+    opacity: 0.9999999
 }
 
 nav {
@@ -115,7 +123,6 @@ nav li.active:hover {
     background-color: inherit;
 }
 
-
 footer {
     background-color: #00BCD4;
     color: white;
@@ -138,7 +145,9 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    width: 66%;
+    width: 62%;
+    margin-left: 4%;
+    min-width: 28rem;
     text-align: center;
 }
 
@@ -150,6 +159,7 @@ h3, h4, h5, h6 {
 section {
     margin-left: 4%;
     width: 62%;
+    min-width: 28rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     padding-left: 1rem;
@@ -167,67 +177,44 @@ section {
 
 
 
-aside {
-    position:absolute;
-    display: inline;
-    padding: 0;
-    right: 4%;
-    top:3rem;
-    width: 36%;
-    min-width: 15em;
-    background-color: #D50000;
-    color: white;
-    quotes: "\201C""\201D""\2018""\2019";
-}
 
-blockquote {
-    margin: 0;
-    padding: 0.5em;
 
-}
+/* GLOBAL MEDIA QUERIES */
 
-blockquote p:before {
-    content: open-quote;
-    display: block;
-    margin-left: -0.55em;
-    margin-top: 0.5em;
-    font-size: 3rem;
-    line-height: 0;
-    vertical-align: -0.7em;
-}
+@media (max-width: 33rem) {
+    nav li {
+        display: initial;
+        border-right: initial;
+    }
+    nav li a {
+        text-align: center;
+        background-color: inherit;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
-blockquote p {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    text-shadow: 1px 1px 0 black, 0 0 0.4em black;
-
-}
-
-blockquote p:after {
-    content: close-quote;
-    display: block;
-    font-size: 3rem;
-    line-height: 0;
-    text-align: right;
-    margin-right: -0.55em;
-}
-
-blockquote cite {
-    margin-left: 3em;
-    font-weight: bolder;
-    font-size: 1.1rem;
-}
-
-blockquote cite:before {
-    content: "\2014";
-    margin-right: 0.5em;
+    }
+    h2 {
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        min-width: initial;
+    }
+    
+    section {
+        width: inherit;
+        min-width: initial;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
 
 
 
 
+/* PAGE-SPECIFIC PROPERTIES */
 
-.home h1:before {
+
+.home h1:after {
     background-position: left 50% top -13rem;
     background-image: url(Deep_Space_9_promenade_The_Fallen.jpg);
 }
@@ -242,13 +229,73 @@ blockquote cite:before {
     width: 51%;
 }
 
-.inventory h1:before {
+
+.home aside {
+    position:absolute;
+    display: inline;
+    padding: 0;
+    right: 4%;
+    top:3rem;
+    width: 36%;
+    min-width: 15em;
+    background-color: #D50000;
+    color: white;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+.home blockquote {
+    margin: 0;
+    padding: 0.5em;
+
+}
+
+.home blockquote p:before {
+    content: open-quote;
+    display: block;
+    margin-left: -0.55em;
+    margin-top: 0.5em;
+    font-size: 3rem;
+    line-height: 0;
+    vertical-align: -0.7em;
+}
+
+.home blockquote p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-shadow: 1px 1px 0 black, 0 0 0.4em black;
+
+}
+
+.home blockquote p:after {
+    content: close-quote;
+    display: block;
+    font-size: 3rem;
+    line-height: 0;
+    text-align: right;
+    margin-right: -0.55em;
+}
+
+.home blockquote cite {
+    margin-left: 3em;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.home blockquote cite:before {
+    content: "\2014";
+    margin-right: 0.5em;
+}
+
+
+
+.inventory h1:after {
     background-position: left 50% top -22rem;
-    background-image: url(Self-sealing_stem_bolt_1.jpg)
+    background-image: url(Self-sealing_stem_bolt_1.jpg);
 }
 
 .inventory h2 {
     width: initial;
+    min-width: initial;
 }
 
 .inventory .productLabel {
@@ -295,6 +342,7 @@ blockquote cite:before {
 
 .inventory section {
     width: 10rem;
+    min-width: initial;
     margin: 1rem;
     border: 0.2rem solid rgba(0, 0, 0, 0);
 }
@@ -312,17 +360,58 @@ blockquote cite:before {
     height: 2.5em;
 }
 
-.about h1:before {
+.about h1:after {
     background-position: left 50% top -9.4rem;
     background-image: url(selfsealing-stembolts.jpg);
 }
 
-.contact section {
-    margin-left: 4%;
-    width: 62%;
-}
-
-.contact h1:before {
+.contact h1:after {
     background-position: left 50% top -1.9rem;
     background-image: url(SubspaceRelayStation06.jpg)
+}
+
+
+
+/* PAGE-SPECIFIC MEDIA QUERIES */
+
+@media (max-width: 55rem) {
+    .home h2 {
+        width: auto;
+        min-width: initial;
+    }
+    .home section:first-child {
+        width: inherit
+    }
+    .home aside {
+        position: initial;
+        margin-bottom: 0;
+    }
+    
+    .home blockquote {
+        background-color: #D50000;
+        margin-bottom: 0;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 29.8rem) {
+    .inventory .content {
+        display: block;
+    }
+    .inventory section {
+        width: inherit;
+    }
+    .inventory section h3 {
+        text-align: left;
+        height: auto;
+        margin-bottom: 0.5em;
+    }
+    .inventory .productLabel {
+        display: inline-block;
+    }
+    .inventory .productValue {
+        display: initial;
+    }
 }
